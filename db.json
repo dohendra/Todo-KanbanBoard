@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "john",
+      "password": "123456",
+      "name": "John Doe",
+      "email": "rockyman324@gmail.com",
+      "contactNumber": "1234567890",
+      "tasks": [
+        {
+          "id": "f3a1d8a6-44c1-11ec-81d3-0242ac130003",
+          "name": "Testing",
+          "stage": 0,
+          "priority": "high",
+          "deadline": "2024-06-20"
+        },
+        {
+          "id": "f3a1db1e-44c1-11ec-81d3-0242ac130003",
+          "name": "API Integration",
+          "stage": 1,
+          "priority": "medium",
+          "deadline": "2024-07-15"
+        },
+        {
+          "id": "f3a1dbd8-44c1-11ec-81d3-0242ac130003",
+          "name": "Map Integration",
+          "stage": 2,
+          "priority": "low",
+          "deadline": "2024-05-23"
+        },
+        {
+          "id": "f3a1dc96-44c1-11ec-81d3-0242ac130003",
+          "name": "Code Review",
+          "stage": 3,
+          "priority": "medium",
+          "deadline": "2024-08-01"
+        },
+        {
+          "id": "f3a1dd54-44c1-11ec-81d3-0242ac130003",
+          "name": "Design UI",
+          "stage": 0,
+          "priority": "low",
+          "deadline": "2024-06-30"
+        },
+        {
+          "id": "f3a1de12-44c1-11ec-81d3-0242ac130003",
+          "name": "Implement Authentication",
+          "stage": 1,
+          "priority": "high",
+          "deadline": "2024-07-05"
+        },
+        {
+          "id": "f3a1ded0-44c1-11ec-81d3-0242ac130003",
+          "name": "Write Unit Tests",
+          "stage": 3,
+          "priority": "medium",
+          "deadline": "2024-06-25"
+        },
+        {
+          "id": "f3a1df8e-44c1-11ec-81d3-0242ac130003",
+          "name": "Database Optimization",
+          "stage": 2,
+          "priority": "high",
+          "deadline": "2024-07-10"
+        },
+        {
+          "id": "f3a1e04c-44c1-11ec-81d3-0242ac130003",
+          "name": "Deploy to Production",
+          "stage": 0,
+          "priority": "medium",
+          "deadline": "2024-08-15"
+        },
+        {
+          "id": "f3a1e10a-44c1-11ec-81d3-0242ac130003",
+          "name": "User Feedback Analysis",
+          "stage": 1,
+          "priority": "low",
+          "deadline": "2024-09-01"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "jane",
+      "password": "123456",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "contactNumber": "0987654321",
+      "tasks": []
+    },
+    {
+      "name": "faizan",
+      "username": "faizan109",
+      "email": "faizan@yopmail.com",
+      "contactNumber": "7505661885",
+      "password": "Appsums@1",
+      "profileImage": {},
+      "tasks": [],
+      "id": 3
+    }
+  ]
+}
