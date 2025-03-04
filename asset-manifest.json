@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Todo-KanbanBoard/static/css/main.7eee306d.css",
+    "main.js": "/Todo-KanbanBoard/static/js/main.641d3666.js",
+    "static/js/533.5e2839d8.chunk.js": "/Todo-KanbanBoard/static/js/533.5e2839d8.chunk.js",
+    "static/js/451.795776d3.chunk.js": "/Todo-KanbanBoard/static/js/451.795776d3.chunk.js",
+    "static/js/752.535cc486.chunk.js": "/Todo-KanbanBoard/static/js/752.535cc486.chunk.js",
+    "static/js/747.1130a87e.chunk.js": "/Todo-KanbanBoard/static/js/747.1130a87e.chunk.js",
+    "static/js/366.c23ba0e3.chunk.js": "/Todo-KanbanBoard/static/js/366.c23ba0e3.chunk.js",
+    "static/js/453.45317d57.chunk.js": "/Todo-KanbanBoard/static/js/453.45317d57.chunk.js",
+    "static/js/570.7f67e2b9.chunk.js": "/Todo-KanbanBoard/static/js/570.7f67e2b9.chunk.js",
+    "static/js/852.1d3fabe4.chunk.js": "/Todo-KanbanBoard/static/js/852.1d3fabe4.chunk.js",
+    "index.html": "/Todo-KanbanBoard/index.html",
+    "main.7eee306d.css.map": "/Todo-KanbanBoard/static/css/main.7eee306d.css.map",
+    "main.641d3666.js.map": "/Todo-KanbanBoard/static/js/main.641d3666.js.map",
+    "533.5e2839d8.chunk.js.map": "/Todo-KanbanBoard/static/js/533.5e2839d8.chunk.js.map",
+    "451.795776d3.chunk.js.map": "/Todo-KanbanBoard/static/js/451.795776d3.chunk.js.map",
+    "752.535cc486.chunk.js.map": "/Todo-KanbanBoard/static/js/752.535cc486.chunk.js.map",
+    "747.1130a87e.chunk.js.map": "/Todo-KanbanBoard/static/js/747.1130a87e.chunk.js.map",
+    "366.c23ba0e3.chunk.js.map": "/Todo-KanbanBoard/static/js/366.c23ba0e3.chunk.js.map",
+    "453.45317d57.chunk.js.map": "/Todo-KanbanBoard/static/js/453.45317d57.chunk.js.map",
+    "570.7f67e2b9.chunk.js.map": "/Todo-KanbanBoard/static/js/570.7f67e2b9.chunk.js.map",
+    "852.1d3fabe4.chunk.js.map": "/Todo-KanbanBoard/static/js/852.1d3fabe4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7eee306d.css",
+    "static/js/main.641d3666.js"
+  ]
+}
