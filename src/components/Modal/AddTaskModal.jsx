@@ -23,38 +23,46 @@ const AddTaskModal = ({ open, handleClose, handleSaveTask, taskToEdit }) => {
 
   useEffect(() => {
     if (taskToEdit) {
-      setTaskName(taskToEdit.name);
-      setPriority(taskToEdit.priority);
-      setDeadline(taskToEdit.deadline);
+      setTaskName(taskToEdit.todo || taskToEdit.name || '');
+      setPriority(taskToEdit.priority || '');
+      setDeadline(taskToEdit.deadline || '');
     } else {
-      setTaskName('');
-      setPriority('');
-      setDeadline('');
+      resetForm();
     }
-  }, [taskToEdit]);
+  }, [taskToEdit, open]); 
+
+  const resetForm = () => {
+    setTaskName('');
+    setPriority('');
+    setDeadline('');
+    setError('');
+  };
 
   const handleSubmit = () => {
     if (!taskName || !priority || !deadline) {
       setError('All fields are required.');
       return;
     }
+    
     const task = {
-      // id: taskToEdit ? taskToEdit.id : uuidv4(), 
       name: taskName,
+      todo: taskName, 
       priority,
       deadline,
-      stage: taskToEdit ? taskToEdit.stage : 0
+      stage: taskToEdit ? taskToEdit.stage : 0,
+      completed: taskToEdit ? taskToEdit.completed : false 
     };
+    
     handleSaveTask(task);
     handleClose();
-    setTaskName('');
-    setPriority('');
-    setDeadline('');
+    resetForm();
   };
-  
 
   return (
-    <Dialog open={open} onClose={handleClose}>
+    <Dialog open={open} onClose={() => {
+      handleClose();
+      resetForm();
+    }}>
       <DialogTitle>{taskToEdit ? 'Edit Task' : 'Create Task'}</DialogTitle>
       <DialogContent>
         <DialogContentText>
@@ -95,7 +103,10 @@ const AddTaskModal = ({ open, handleClose, handleSaveTask, taskToEdit }) => {
         {error && <Typography color="error">{error}</Typography>}
       </DialogContent>
       <DialogActions>
-        <Button onClick={handleClose} variant="contained" color="error">
+        <Button onClick={() => {
+          handleClose();
+          resetForm();
+        }} variant="contained" color="error">
           Cancel
         </Button>
         <Button onClick={handleSubmit} color="success" variant="contained">

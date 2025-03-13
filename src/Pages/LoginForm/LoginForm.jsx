@@ -15,8 +15,7 @@ import CustomTextField from '../../components/CustomTextField/CustomTextField';
 import { fetchUsers } from '../../apiConfig';
 import { useDispatch } from "react-redux";
 import { loginSuccess } from "../../redux/features/userSlice";
-import { setTasks } from '../../redux/features/taskSlice';
-
+import { fetchTasks } from '../../redux/features/taskSlice';
 const defaultTheme = createTheme();
 
 const validationSchema = Yup.object({

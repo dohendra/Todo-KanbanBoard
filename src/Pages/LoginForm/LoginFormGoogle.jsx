@@ -17,7 +17,7 @@ import CustomTextField from '../../components/CustomTextField/CustomTextField';
 import { fetchUsers, loginApi } from '../../apiConfig';
 import { useDispatch, useSelector } from "react-redux";
 import { loginSuccess } from "../../redux/features/userSlice";
-import { setTasks } from '../../redux/features/taskSlice';
+import { fetchTasks } from '../../redux/features/taskSlice';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from 'jwt-decode';
 const clientId=process.env.REACT_APP_CLIENT_ID
@@ -74,7 +74,7 @@ export default function LoginFormGoogle() {
           navigate("/dashboard");
           sessionStorage.setItem("token","token")
           dispatch(loginSuccess(foundUserData))
-          dispatch(setTasks(foundUserData?.tasks))
+          dispatch(fetchTasks(foundUserData?.tasks))
 
         } else {
           const existingUser = allUsersInDb.find((user) => user.email === values.identifier || user.username === values.identifier);
@@ -107,7 +107,7 @@ export default function LoginFormGoogle() {
         navigate("/dashboard");
         sessionStorage.setItem("token", token);
         dispatch(loginSuccess(foundUserData));
-        dispatch(setTasks(foundUserData?.tasks));
+        dispatch(fetchTasks(foundUserData?.tasks));
       } else {
         toast.error('User not found');
       }

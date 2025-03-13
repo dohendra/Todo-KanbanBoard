@@ -25,7 +25,6 @@ export default function CardBox({ title, count }) {
             {count}
           </Typography>
           {/* <Typography color="text.secondary" sx={{ flex: 1 }}>
-        on 15 March, 2019
       </Typography> */}
 
 
